@@ -4890,7 +4890,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_class_Imagick_newImage, 0, 0, 3)
 	ZEND_ARG_OBJ_TYPE_MASK(0, background_color, ImagickPixel, MAY_BE_STRING, NULL)
 
 #if PHP_VERSION_ID >= 80000
-    ZEND_ARG_TYPE_INFO_WITH_DEFAULT_VALUE(0, format, IS_STRING, 0, "null")
+    ZEND_ARG_TYPE_INFO_WITH_DEFAULT_VALUE(0, format, IS_STRING, 1, "null")
 #else
     ZEND_ARG_INFO(0, format)
 #endif
